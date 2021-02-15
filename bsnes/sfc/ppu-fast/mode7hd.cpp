@@ -7,7 +7,7 @@ auto PPU::Line::cacheMode7HD() -> void {
     ))
     bool state = false;
     uint y;
-    //find the moe 7 groups
+    //find the mode 7 groups
     for(y = 0; y < Line::count; y++) {
       if(state != isLineMode7(ppu.lines[Line::start + y])) {
         state = !state;
